@@ -10,6 +10,9 @@ lifecycleLivedataKtx = "2.6.1"
 lifecycleViewmodelKtx = "2.6.1"
 navigationFragment = "2.6.0"
 navigationUi = "2.6.0"
+javaoscCore = "0.8"
+javosc = "1.0"
+javaosc = "0.8"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -22,6 +25,9 @@ lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-lived
 lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
 navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+javaosc-core = { group = "com.illposed.osc", name = "javaosc-core", version = "0.7" }
+javosc = { group = "net.sf.javosc", name = "javosc", version.ref = "javosc" }
+javaosc = { group = "com.illposed.osc", name = "javaosc", version = "0.7" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

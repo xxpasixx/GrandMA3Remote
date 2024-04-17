@@ -1,6 +1,8 @@
 package de.pamlights.grandMA3Remote;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -14,6 +16,7 @@ import de.pamlights.grandMA3Remote.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button sendButton;
     private ActivityMainBinding binding;
 
     @Override
@@ -22,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        sendButton = findViewById(R.id.send_button);
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -32,6 +37,15 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+
+
+        sendButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new SendOSCMessageTask().execute("/cmd", "HIGHLIGHT");
+            }
+        });
     }
+
 
 }
