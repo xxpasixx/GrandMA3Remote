@@ -1,0 +1,6 @@
+- name: Build App on PR
+- 'on': pull_request
+- uses: sparkfabrik/android-build-action@v1.5.0
+  with:
+    project-path: android
+    output-path: grandMA3-Remote.apk
