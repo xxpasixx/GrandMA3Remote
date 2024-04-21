@@ -42,6 +42,7 @@ dependencies {
     implementation(libs.navigation.ui)
     implementation(libs.javaosc.core)
     implementation(libs.javaosc)
+    implementation(libs.google.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
