@@ -21,6 +21,9 @@ public class HomeFragment extends Fragment {
         HomeViewModel homeViewModel =
                 new ViewModelProvider(this).get(HomeViewModel.class);
 
+      //  Button sendButton = binding.getRoot().findViewById(R.id.send_button);
+      //  sendButton.setOnClickListener(v -> new SendOSCMessageTask().execute("/cmd", "HIGHLIGHT"));
+
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
