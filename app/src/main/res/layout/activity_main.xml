@@ -35,7 +35,7 @@
         android:id="@+id/send_button"
         android:layout_width="208dp"
         android:layout_height="73dp"
-        android:text="Test OSC"
+        android:text="@string/test_osc"
         app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
